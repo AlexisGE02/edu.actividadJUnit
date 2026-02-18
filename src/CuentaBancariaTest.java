@@ -67,5 +67,12 @@ public void testCuentaBloqueada() {
     assertTrue(ingresoExitosoDesbloqueada, "Se debería poder ingresar dinero en una cuenta desbloqueada");
 
 }
-
+CuentaBancaria cuenta = new CuentaBancaria("Antoñita", 1000.0);
+CuentaBancaria cuenta2 = new CuentaBancaria("Manolo", 1000.0);
+//Añadir los test para transferir positivos, negativos, más de la cuenta, a una cuenta bloqueada y desde una cuenta bloqueada
+@Test
+void transferirPositivoTest() {
+	assertTrue(cuenta.transferir(cuenta2, 200));
+	assertEquals(1200.0, cuenta2.getSaldo());
+}
 }
