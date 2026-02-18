@@ -68,9 +68,4 @@ public void testCuentaBloqueada() {
 
 }
 
-public void transferirPositivoTest() {
-	CuentaBancaria cuenta2 = new CuentaBancaria("Pepa Morales", 50);
-	assertTrue(cuenta,transferir)
-	
-}
 }
