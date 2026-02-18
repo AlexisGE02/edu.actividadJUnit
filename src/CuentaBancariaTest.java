@@ -67,4 +67,10 @@ public void testCuentaBloqueada() {
     assertTrue(ingresoExitosoDesbloqueada, "Se debería poder ingresar dinero en una cuenta desbloqueada");
 
 }
+
+public void transferirPositivoTest() {
+	CuentaBancaria cuenta2 = new CuentaBancaria("Pepa Morales", 50);
+	assertTrue(cuenta,transferir)
+	
+}
 }
